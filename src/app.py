@@ -1,4 +1,6 @@
-\
+
+from keep_alive import keep_alive
+keep_alive()
 import os, asyncio, discord
 from discord.ext import commands
 from src/core.db import init_db

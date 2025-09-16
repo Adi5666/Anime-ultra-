@@ -1,11 +1,15 @@
 from keep_alive import keep_alive
 keep_alive()
 
-import os, asyncio, discord
+import os
+import asyncio
+import discord
 from discord.ext import commands
-from src/core.db import init_db
-from src/core.logger import log
-from src/services.prefixes import get_prefix
+
+from src.core.db import init_db
+from src.core.logger import log
+from src.services.prefixes import get_prefix
+
 
 TOKEN = os.environ.get("DISCORD_TOKEN")
 
